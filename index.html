@@ -1,14 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio website - Yogi Ginting</title>
-
-    <!-- css external -->
-    <link rel="stylesheet"href="css\style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Makana Grup</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ffa500;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .logo-hero {
+      width: 150px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .logo-hero:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0 0.5rem;
+    }
+    .slogan {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    nav {
+      background-color: #ff8800;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      background-color: #ff8800;
+      border-radius: 5px;
+    }
+    section {
+      padding: 2rem 1rem;
+    }
+    .struktur p, .visi-misi p {
+      margin: 0.5rem 0;
+    }
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .galeri img {
+      width: 100%;
+      border-radius: 8px;
+      height: auto;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 0.6rem;
+      background-color: #ffa500;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff9900;
+    }
+    .whatsapp {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .whatsapp a {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #25d366;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s;
+    }
+    .whatsapp a:hover {
+      background-color: #1ebc59;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border: none;
+      margin: 1rem auto;
+      display: block;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-    
+  <header>
+    <img src="logo-makana.png" alt="Logo PT Makana Grup" class="logo-hero" />
+    <h1>PT Makana Grup</h1>
+    <div class="slogan">"Segar, Manis, Jerukku"</div>
+    <p>Menekan rasa segar dan manis yang khas dari tanah Karo, Sumatera Utara</p>
+  </header>
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#struktur">Struktur</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>PT Makana Grup adalah perusahaan yang bergerak di bidang perdagangan buah, khususnya jeruk dari dataran tinggi Karo.</p>
+  </section>
+  <section id="layanan">
+    <h2>Layanan</h2>
+    <p>Pemasokan buah jeruk segar ke pasar lokal dan nasional, serta kemitraan dengan petani lokal.</p>
+  </section>
+  <section id="galeri">
+    <h2>Galeri</h2>
+    <div class="galeri">
+      <img src="rumah adat karo" alt="Rumah Adat Karo" />
+      <img src="galeri2.jpeg" alt="Tugu Jeruk Berastagi" />
+      <img src="galeri3.jpeg" alt="Panen Jeruk" />
+      <img src="galeri4.jpeg" alt="Jeruk Segar" />
+      <img src="galeri5.jpeg" alt="Jeruk di Pohon" />
+      <img src="galeri6.jpeg" alt="Jeruk Kupas" />
+    </div>
+  </section>
+  <section id="struktur" class="struktur">
+    <h2>Struktur Tim</h2>
+    <p><strong>Direktur Utama:</strong> Sigit Haganta Sitepu</p>
+    <p><strong>Manajer Operasional:</strong> Jebry Yanta Ginting</p>
+    <p><strong>Manajer Pemasaran:</strong> Yogi Pranata Ginting</p>
+    <p><strong>Staf Admin:</strong> Miel Selvy Tarigan</p>
+    <p><strong>Staf Finance Accounting:</strong> Enda Sitepu</p>
+  </section>
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <form>
+      <label>Nama:</label>
+      <input type="text" name="nama" required />
+      <label>Email:</label>
+      <input type="email" name="email" required />
+      <label>Pesan:</label>
+      <textarea name="pesan" rows="5"></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <div class="whatsapp">
+      <a href="https://wa.me/6282280101596" target="_blank">Hubungi via WhatsApp</a>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63714.03165454749!2d98.49597193824603!3d3.1947928968293277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30320e58090ae99b%3A0x64e93c6c9ebebf64!2sBerastagi%2C%20Karo%2C%20Sumatera%20Utara!5e0!3m2!1sen!2sid!4v1680000000000!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+  <footer>
+    <p>&copy; 2025 PT Makana Grup. Semua hak dilindungi.</p>
+    <p>Email: gintingyogi61@gmail.com | Telp: +62 822-8010-1596</p>
+    <p>Alamat: Berastagi, Tanah Karo, Sumatera Utara</p>
+  </footer>
 </body>
 </html>
